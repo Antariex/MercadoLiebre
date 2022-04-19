@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eac926;
+    margin: 0%;
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    max-width: 25%;
+}
+
+.fa-solid fa-hand-holding-dollar {
+    display: inline;
+    font-size: 2px;
+    margin: 5px;
+    padding: 5px;
+}
+
+input {
+    margin-left: 3px;
+    margin-bottom: 2px;
+    padding: 1px;
+    display: inline-block;
+    font-size: 1em;
+    border: solid white 3px;
+    background-color: white;
+    }
+
+img {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+p {
+    font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos,
+.descripciones {
+    font-size: 16px;
+}
+
+.lupa {
+    color: #03264C;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    border: solid white 2px;
+    padding: 1px;
+}
+
+.burguer-menu {
+    background-color: #03264C;
+    color: white;
+    width: 0 auto;
+    text-align: center;
+    padding: 8px 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    left: 48%;
+    margin: 5px;
+    border-radius: 5px;
+    border: solid #03264C 1px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+footer {
+    text-align: center;
+}
+
+#footer-icon {
+    color: #03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.legales {
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
