@@ -3,25 +3,35 @@
     padding: 0;
 }
 
+body {
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
 header {
     background-color: #eac926;
     margin: 0%;
     width: 100%;
+    text-align: center;    
 }
 
 main {
     width: 90%;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
 }
 
-body {
-    margin: 0%;
-    font-family: 'Roboto', sans-serif;
+footer {
+    text-align: center;
 }
+
+
+/* Estilos para elementos del header*/
 
 .logo {
-    max-width: 25%;
+    max-width: 50vw;
 }
 
 .fa-solid fa-hand-holding-dollar {
@@ -39,31 +49,6 @@ input {
     font-size: 1em;
     border: solid white 3px;
     background-color: white;
-    }
-
-img {
-    width: 100%;
-    margin-bottom: 5px;
-    padding: 0;
-    display: block;
-    position: relative;
-}
-
-p {
-    font-size: 12px;
-}
-
-.titulares {
-    font-size: 24px;
-}
-
-.precios {
-    font-size: 18px;
-}
-
-.descuentos,
-.descripciones {
-    font-size: 16px;
 }
 
 .lupa {
@@ -77,25 +62,77 @@ p {
 }
 
 .burguer-menu {
-    background-color: #03264C;
+    background-color: #1259c3;
     color: white;
     width: 0 auto;
-    text-align: center;
-    padding: 8px 10px;
-    display: inline-block;
+    padding: 6px 8px;
+    display: none;
     box-sizing: border-box;
-    position: relative;
-    left: 48%;
     margin: 5px;
-    border-radius: 5px;
-    border: solid #03264C 1px;
+    border-radius: 7px;
+    border: solid #1259c3 1px;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1em;
 }
 
-footer {
-    text-align: center;
+img {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+    display: block;
+    position: relative;
 }
+
+
+/* Estilos para elementos del main*/
+
+p {
+    font-size: 12px;
+}
+
+section {
+    margin: 0 auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+article {
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+.card {
+    background-color: white;
+    display: inline-block;
+    max-width: 290px;
+}
+
+.card-body {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    display: inline-block;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.fa-truck {
+    color: red;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos,
+.descripciones {
+    font-size: 16px;
+}
+
+
+/* Estilos para elementos del footer*/
 
 #footer-icon {
     color: #03264C;
@@ -104,7 +141,30 @@ footer {
 }
 
 .legales {
-    text-align: left;
+    text-align: center;
     margin-left: 5px;
     margin-bottom: 5px;
+}
+
+
+/* Estilos para diseño adaptativo*/
+
+/* mobile */
+@media(max-width: 361px) {
+    .navbar {
+        display: none;
+    }
+    .burguer-menu {
+        display: inline-block;
+    }
+    .descripciones {
+        display: none;
+    }
+}
+
+/* tablets y desktops */
+@media(min-width: 362px) {
+    .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
