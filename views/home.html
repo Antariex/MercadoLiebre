@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/icono.png">
     <title>MercadoLiebre</title>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -16,26 +15,40 @@
 
 <body>
     <header>
-        <img class="logo" src="/images/logo-mercado-liebre.svg">
 
-        <form>
-            <input type="text" name="busqueda" placeholder="buscar productos, marcas" align="center"> </input>
+        <div class="search-navbar">
+            <img class="logo" src="/images/logo-mercado-liebre.svg">
 
-            <div class="lupa">
-                <i class="fa-solid fa-magnifying-glass"></i></div>
-        </form>
+            <form>
+                <input type="search" placeholder="buscar productos, marcas" align="center"></input>
+
+                <div class="lupa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+
+            <div>
+                <p>
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    &nbsp Comprá en cuotas y sin tarjeta de crédito
+                </p>
+            </div>
+
+        </div>
+
         <br>
-        <p>
-            <i class="fa-solid fa-hand-holding-dollar"> &nbsp </i>Comprá en cuotas y sin tarjeta de crédito
-        </p>
+
         <br>
         <nav class="navbar">
-            <ul>
-                <li><a href="#Ofertas">Ofertas</a></li>
-                <li><a href="#Tiendas">Tiendas Oficiales</a></li>
-                <li><a href="#Vender">Vender</a></li>
-                <li><a href="#Ayuda">Ayuda</a></li>
-            </ul>
+            <div class=""secciones>
+                <ul>
+                    <li><a href="#Ofertas">Ofertas</a></li>
+                    <li><a href="#Tiendas">Tiendas Oficiales</a></li>
+                    <li><a href="#Vender">Vender</a></li>
+                    <li><a href="#Ayuda">Ayuda</a></li>
+                </ul>
+            </div>
+
 
             <ul>
                 <li><a href="#Cuenta">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>

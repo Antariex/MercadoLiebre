@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,7 @@ header {
     background-color: #eac926;
     margin: 0%;
     width: 100%;
-    text-align: center;    
+    text-align: center;
 }
 
 main {
@@ -21,6 +22,8 @@ main {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -28,17 +31,19 @@ footer {
 }
 
 
-/* Estilos para elementos del header*/
+/* Estilos para elementos del header */
 
-.logo {
-    max-width: 50vw;
+.search-navbar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 98vw;
+    justify-content: space-around;
 }
 
-.fa-solid fa-hand-holding-dollar {
-    display: inline;
-    font-size: 2px;
-    margin: 5px;
-    padding: 5px;
+.logo {
+    max-width: 50%;
 }
 
 input {
@@ -49,6 +54,9 @@ input {
     font-size: 1em;
     border: solid white 3px;
     background-color: white;
+    max-width: 50vw;
+
+
 }
 
 .lupa {
@@ -59,6 +67,25 @@ input {
     font-size: 1em;
     border: solid white 2px;
     padding: 1px;
+}
+
+.fa-solid fa-hand-holding-dollar {
+    display: inline;
+    font-size: 2px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+ul {
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
 }
 
 .burguer-menu {
@@ -84,7 +111,7 @@ img {
 }
 
 
-/* Estilos para elementos del main*/
+/* Estilos para elementos del main */
 
 p {
     font-size: 12px;
@@ -99,6 +126,7 @@ section {
 article {
     margin: 10px 5px;
     display: inline-block;
+    position: relative;
 }
 
 .card {
@@ -119,20 +147,43 @@ article {
 }
 
 .fa-truck {
-    color: red;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
 }
 
 .precios {
     font-size: 18px;
+    display: inline;
+    margin-left: -20px;
+    width: 22%;
 }
 
-.descuentos,
+.descuentos {
+    font-size: 16px;
+    display: inline;
+    width: 64%;
+}
+
 .descripciones {
     font-size: 16px;
+    display: inline-block;
+    color: #39b54a;
+    display: display-outside;
 }
 
 
-/* Estilos para elementos del footer*/
+/* Estilos para elementos del footer */
 
 #footer-icon {
     color: #03264C;
@@ -147,24 +198,57 @@ article {
 }
 
 
-/* Estilos para diseño adaptativo*/
+/* Estilos para diseño adaptativo */
 
 /* mobile */
 @media(max-width: 361px) {
     .navbar {
         display: none;
     }
+
     .burguer-menu {
         display: inline-block;
     }
+
     .descripciones {
         display: none;
     }
 }
 
-/* tablets y desktops */
+/* tablet */
 @media(min-width: 362px) {
     .card {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burguer-menu {
+        display: inline-block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .descripciones {
+        display: none;
+    }
+}
+
+/* desktop */
+@media(min-width: 769px) {
+    .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burguer-menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .descripciones {
+        display: inline-block
     }
 }
