@@ -11,63 +11,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icono.png">
 </head>
 
 <body>
+
+    <!--Aquí empieza el header con: logo, campo de búsqueda y barras de navegación-->
+
     <header>
 
-        <div class="search-navbar">
-            <img class="logo" src="/images/logo-mercado-liebre.svg">
+        <div class="main-header">
+            <div class="container">
+                <img class="logo" src="/images/logo-mercado-liebre.svg">
+                <form>
+                    <input type="search" placeholder="buscar productos, marcas y más"></input>
 
-            <form>
-                <input type="search" placeholder="buscar productos, marcas" align="center"></input>
-
-                <div class="lupa">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </form>
-
-            <div>
-                <p>
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                    &nbsp Comprá en cuotas y sin tarjeta de crédito
-                </p>
+                    <div class="lupa">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
             </div>
-
+            <h3 class="lema"><i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito</h3>
         </div>
 
-        <br>
+        <nav class="main-navbar">
 
-        <br>
-        <nav class="navbar">
-            <div class=""secciones>
-                <ul>
-                    <li><a href="#Ofertas">Ofertas</a></li>
-                    <li><a href="#Tiendas">Tiendas Oficiales</a></li>
-                    <li><a href="#Vender">Vender</a></li>
-                    <li><a href="#Ayuda">Ayuda</a></li>
-                </ul>
-            </div>
+            <ul class="left-navbar">
+                <li><a href="#Ofertas">Ofertas</a></li>
+                <li><a href="#Tiendas">Tiendas oficiales</a></li>
+                <li><a href="#Vender">Vender</a></li>
+                <li><a href="#Ayuda">Ayuda</a></li>
+            </ul>
 
-
-            <ul>
+            <ul class="right-navbar">
                 <li><a href="#Cuenta">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
                 <li><a href="#Ingreso">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i> </li>
                 <li><a href="#Compras">compras</a> <i class="fa-solid fa-basket-shopping"></i> </li>
             </ul>
         </nav>
 
-        <nav>
-            <div class="burguer-menu"><i class="fa-solid fa-bars"></i></div>
-            <br>
-            <br>
-        </nav>
+        <br>
+        <div class="burguer-menu"><i class="fa-solid fa-bars"></i></div>
+        <br>
 
     </header>
-    <img src="/images/img-home-banner.jpg">
 
+    <!--Aquí va un banner-->
+
+    <div><img src="/images/img-home-banner.jpg"></div>
 
     <!--Aquí comienza el main con todos los artículos-->
+
     <main>
         <section>
             <h3 class="titulares">Basado en tu última visita</h3>
@@ -179,6 +174,8 @@
         </section>
 
     </main>
+
+    <!--Aquí comienza el footer con: beneficios y legales-->
 
     <footer>
         <section>

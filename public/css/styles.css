@@ -14,7 +14,9 @@ header {
     background-color: #eac926;
     margin: 0%;
     width: 100%;
+    padding: 20px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 main {
@@ -33,30 +35,19 @@ footer {
 
 /* Estilos para elementos del header */
 
-.search-navbar {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 98vw;
-    justify-content: space-around;
-}
-
 .logo {
-    max-width: 50%;
+    max-width: 98px;
+    display: inline-flex;
+    margin-left: -5;
 }
 
 input {
-    margin-left: 3px;
     margin-bottom: 2px;
-    padding: 1px;
+    padding: 6px 1px 7px;
     display: inline-block;
-    font-size: 1em;
-    border: solid white 3px;
-    background-color: white;
-    max-width: 50vw;
-
-
+    font-size: 10px;
+    border: solid white;
+    width: 163px;
 }
 
 .lupa {
@@ -64,9 +55,19 @@ input {
     background-color: white;
     text-align: center;
     display: inline-block;
-    font-size: 1em;
-    border: solid white 2px;
-    padding: 1px;
+    font-size: 14px;
+    border: solid white 1px;
+    padding: 4px 1px 7px;
+    vertical-align: baseline;
+    margin-left: -4px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .fa-solid fa-hand-holding-dollar {
@@ -76,16 +77,42 @@ input {
     padding: 5px;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+.lema {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    max-width: 350px;
 }
 
-ul {
+.main-navbar {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navbar ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navbar li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8px;
+    align-items: center;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    align-items: center;
+    margin: 0 3px;
 }
 
 .burguer-menu {
@@ -94,13 +121,14 @@ ul {
     width: 0 auto;
     padding: 6px 8px;
     display: none;
-    box-sizing: border-box;
     margin: 5px;
-    border-radius: 7px;
+    border-radius: 8px;
     border: solid #1259c3 1px;
     font-weight: bold;
     font-size: 1em;
 }
+
+/* Estilos para imágenes */
 
 img {
     width: 100%;
@@ -152,8 +180,8 @@ article {
     border-radius: 50%;
     background-color: #FFF;
     position: absolute;
-    right: 30px;
-    bottom: 40px;
+    right: 20px;
+    bottom: 53px;
     display: inline-block;
     font-size: 16px;
     padding: 5px;
@@ -177,9 +205,8 @@ article {
 
 .descripciones {
     font-size: 16px;
-    display: inline-block;
+    display: flex;
     color: #39b54a;
-    display: display-outside;
 }
 
 
@@ -201,8 +228,15 @@ article {
 /* Estilos para diseño adaptativo */
 
 /* mobile */
-@media(max-width: 361px) {
-    .navbar {
+@media(min-width: 320px) and (max-width:767px) {
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .main-navbar {
         display: none;
     }
 
@@ -216,17 +250,23 @@ article {
 }
 
 /* tablet */
-@media(min-width: 362px) {
+@media(min-width: 768px) {
     .card {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     .burguer-menu {
-        display: inline-block;
+        display: none;
     }
 
-    .navbar {
-        display: none;
+    .main-header {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar {
+        display: inline-flex;
+        justify-content: space-between;
     }
 
     .descripciones {
@@ -240,15 +280,21 @@ article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .burguer-menu {
         display: none;
     }
 
-    .navbar {
-        display: flex;
-    }
-
     .descripciones {
-        display: inline-block
+        display: block
     }
 }
