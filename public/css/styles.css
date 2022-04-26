@@ -273,6 +273,11 @@ article {
     .descripciones {
         display: block
     }
+
+    input {
+        width: 330px;
+        margin-left: 10px;
+    }
 }
 
 /* desktop */
@@ -297,5 +302,10 @@ article {
 
     .descripciones {
         display: block
+    }
+
+    input {
+        width: 405px;
+        margin-left: 10px;
     }
 }
