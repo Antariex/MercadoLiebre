@@ -38,7 +38,6 @@ footer {
 .logo {
     max-width: 98px;
     display: inline-flex;
-    margin-left: -5;
 }
 
 input {
@@ -87,7 +86,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 20px 0 0 15px;
 }
 
 .main-navbar ul {
@@ -108,11 +107,11 @@ input {
 
 .main-navbar a {
     text-decoration: none;
-    color: #222222;
+    color: rgba(51,51,51,.6);
     display: inline-block;
     font-size: 14px;
     align-items: baseline;
-    margin: 0 3px;
+    margin: 0 4px;
     font-weight: 300;
 }
 
@@ -276,8 +275,18 @@ article {
 
     input {
         width: 330px;
-        margin-left: 10px;
+        margin-left: 15px;
+        padding: 6px 10px 7px;
+        font-size: 13px;
     }
+
+    .lupa {
+        border: solid white 1px;
+        padding: 7px 1px 8px;
+        vertical-align: baseline;
+        margin-left: -4px;
+    }
+        
 }
 
 /* desktop */
@@ -306,6 +315,19 @@ article {
 
     input {
         width: 405px;
-        margin-left: 10px;
+        margin-left: 55px;
+        padding: 6px 10px 7px;
+        font-size: 13px;
+    }
+
+    .lupa {
+        border: solid white 1px;
+        padding: 7px 1px 8px;
+        vertical-align: baseline;
+        margin-left: -4px;
+    }
+
+    .logo {
+        max-width: 140px;
     }
 }
