@@ -30,6 +30,7 @@ main {
 
 footer {
     text-align: center;
+    background-color: white;
 }
 
 
@@ -40,7 +41,7 @@ footer {
     display: inline-flex;
 }
 
-input {
+.search {
     margin-bottom: 2px;
     padding: 6px 1px 7px;
     display: inline-block;
@@ -80,7 +81,7 @@ input {
     font-weight: normal;
     text-align: center;
     max-width: 350px;
-    color: rgba(51,51,51,.9);
+    color: rgba(51, 51, 51, .9);
 }
 
 .main-navbar {
@@ -88,7 +89,7 @@ input {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 0 15px;
-    color: rgba(51,51,51,.6);
+    color: rgba(51, 51, 51, .6);
 }
 
 .main-navbar ul {
@@ -109,7 +110,7 @@ input {
 
 .main-navbar a {
     text-decoration: none;
-    color: rgba(51,51,51,.6);
+    color: rgba(51, 51, 51, .6);
     display: inline-block;
     font-size: 14px;
     align-items: baseline;
@@ -215,7 +216,7 @@ article {
 /* Estilos para elementos del footer */
 
 #footer-icon {
-    color: #03264C;
+    color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -226,6 +227,48 @@ article {
     margin-bottom: 5px;
 }
 
+/* Estilos para formularios */
+
+.formulario {
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin: 2px;
+}
+
+.formulario input {
+    padding: 10px 6px;
+    margin: 7px 0;
+}
+
+.formulario button {
+    background-color: #1259c3;
+    color: white;
+    border: 0;
+    padding: 12px 14px;
+    margin: 0 5px;
+}
+
+.formulario button a {
+    text-decoration: none;
+    color: white;
+}
+
+.login {
+    text-align: center;
+}
+
+.crearPerfil {
+    text-decoration: none;
+    color: #1259c3;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 /* Estilos para diseño adaptativo */
 
@@ -275,7 +318,7 @@ article {
         display: block
     }
 
-    input {
+    .search {
         width: 330px;
         margin-left: 15px;
         padding: 6px 10px 7px;
@@ -288,7 +331,7 @@ article {
         vertical-align: baseline;
         margin-left: -4px;
     }
-        
+
 }
 
 /* desktop */
@@ -315,7 +358,7 @@ article {
         display: block
     }
 
-    input {
+    .search {
         width: 405px;
         margin-left: 55px;
         padding: 6px 10px 7px;
