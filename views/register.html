@@ -65,20 +65,28 @@
         <div class="formulario">
 
             <h2>Para crear tu cuenta necesitamos algunos datos:</h2>
-<br>
+            <br>
             <form method="POST" action="#">
-                <p><input type="text" name="nombre" placeholder="Nombre y apellido" required>
-                    </input></p>
-                <p><input type="text" name="usuario" placeholder="Nombre de usuari@" required>
-                    </input></p>
-                <p><input type="email" name="email" placeholder="E-mail" required>
+
+                <label>Nombre y apellido</label>
+                <p><input type="text" name="nombre" placeholder="Ej: Luis Raúl Gandolfi" minlength="4" maxlength="30"
+                        required>
                     </input></p>
                 <br>
-                <h4>Fecha de nacimiento</h4>
+                <label>Nombre de usuari@</label>
+                <p><input type="text" name="usuario" placeholder="Ej: Tito1614" minlength="4" maxlength="12" required>
+                    </input></p>
+                <br>
+                <label>E-mail</label>
+                <p><input type="email" name="email" placeholder="Ej: licvarela@pop.com.ar" required>
+                    </input></p>
+                <br>
+                <label>Fecha de nacimiento</label>
                 <p><input type="date" name="fecha" value="2022-04-27" required>
                     </input></p>
                 <br>
-                <p><input type="text" name="domicilio" placeholder="Domicilio" required>
+                <label>Domicilio</label>
+                <p><input type="text" name="domicilio" placeholder="Ej: Malabia 1614" required>
                     </input></p>
                 <br>
                 <h4>Perfil del usuario</h4>
@@ -109,10 +117,16 @@
                 <p><input type="file" name="avatar" accept=".jpg" required>
                     </input></p>
                 <br>
-                <p><input type="password" name="password" placeholder="Contraseña" required>
-                    </input></p>
-                <p><input type="password" name="repassword" placeholder="Confirmar contraseña" required>
-                    </input></p>
+                <label>Contraseña: </label>
+                <input type="password" name="password" placeholder="Al menos 6 caracteres" minlength="6" maxlength="10" required>
+                </input>
+                <br>
+                <label>Confirmar: &nbsp&nbsp</label>
+                <input type="password" name="repassword" placeholder="Confirmá tu contraseña" minlength="6" maxlength="10"
+                    required>
+                </input>
+                <p>( i ) La contraseña debe tener 6 caracteres como mínimo.</p>
+                <br>
                 <br>
 
                 <button type="reset" class="resetButton">
@@ -126,7 +140,10 @@
             <br>
             <br>
             <br>
+            <p>¿Ya tenés una cuenta en MercadoLiebre? <a href="/views/login.html" class="irALogin">Iniciar sesión</a></p>
+            <br>
             <hr>
+            <br>
         </div>
 
     </main>
@@ -159,7 +176,7 @@
     <section class="legales">
         <br>
         <br>
-        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        <p>Copyright © 1999-2022 MercadoLiebre S.R.L.</p>
     </section>
 </body>
 
