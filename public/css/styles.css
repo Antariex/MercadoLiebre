@@ -121,6 +121,10 @@ footer {
     font-weight: 300;
 }
 
+.main-navbar a:hover {
+    color: rgba(51, 51, 51, .8);
+}
+
 .burguer-menu {
     background-color: #1259c3;
     color: white;
